@@ -3,8 +3,8 @@ function transformUppercase(_val){
 }
 
 let elNamaPengguna = document.getElementById("namaPengguna"); // 1) Select element
-elNamaPengguna.addEventListener("keyup", function(){
-    elNamaPengguna = transformUppercase(elNamaPengguna.value);
+elNamaPengguna.addEventListener("keyup",function(){
+    elNamaPengguna.value = transformUppercase(elNamaPengguna.value);
 });
 
 function checkPassword(){
