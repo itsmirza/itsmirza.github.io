@@ -8,5 +8,14 @@ elNamaPengguna.addEventListener("keyup", function(){
 });
 
 function checkPassword(){
-    
+    let elKataLaluan = document.getElementById("kataLaluan");
+    let password_val = elKataLaluan.value;
+    if(password_val.length > 5){
+        alert("Password Check...Ok");
+    } else {
+        alert("Password too short!");
+    }
 }
+
+let elKataLaluan = document.getElementById("kataLaluan");
+elKataLaluan.onblur = checkPassword;
