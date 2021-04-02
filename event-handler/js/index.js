@@ -6,3 +6,7 @@ let elNamaPengguna = document.getElementById("namaPengguna"); // 1) Select eleme
 elNamaPengguna.addEventListener("keyup", function(){
     elNamaPengguna = transformUppercase(elNamaPengguna.value);
 });
+
+function checkPassword(){
+    
+}
