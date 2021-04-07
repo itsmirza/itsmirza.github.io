@@ -40,7 +40,7 @@ let app4 = new Vue({
 });
 
 let app5 = new Vue({
-    el: "app5",
+    el: "#app5",
     data:{
         msg: "Hakim Arif"
     },
@@ -52,7 +52,7 @@ let app5 = new Vue({
 });
 
 let app6 = new Vue({
-    el: "app6",
+    el: "#app6",
     data:{
         message: "Hello World!"
     }
