@@ -14,9 +14,27 @@ let app2 = new Vue({
     }
 });
 
-let app = new Vue({
+//if true it will show, if false it will hide
+let app3 = new Vue({
     el: "#app3",
     data: {
         showIt: true
+    }
+});
+
+let app4 = new Vue({
+    el: "#app4",
+    data: {
+        theList: [
+            {
+                text:"Learn HTML"
+            },
+            {
+                text: "Learn CSS"
+            },
+            {
+                text:"Learn Javascript"
+            }
+        ]
     }
 });
