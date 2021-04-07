@@ -13,3 +13,10 @@ let app2 = new Vue({
         linkText: "Google is Down"
     }
 });
+
+let app = new Vue({
+    el: "#app3",
+    data: {
+        showIt: true
+    }
+});
