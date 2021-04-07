@@ -57,3 +57,28 @@ let app6 = new Vue({
         message: "Hello World!"
     }
 });
+
+Vue.component("grocery-list",{
+    props: ["todo"],
+    templet: "<li>{{todo-desc}}</li>"
+});
+
+let app7 = new Vue ({
+    el:"#app7",
+    data: {
+        groceryList: [
+            {
+                id: 0,
+                desc: "Vegitables"
+            },
+            {
+                id: 1,
+                desc: "Mineral Water"
+            },
+            {
+                id: 2,
+                desc: "Cookies"
+            }
+        ]
+    }
+});
