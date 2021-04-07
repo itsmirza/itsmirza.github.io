@@ -60,7 +60,7 @@ let app6 = new Vue({
 
 Vue.component("grocery-list",{
     props: ["todo"],
-    templet: "<li>{{todo.desc}}</li>"
+    template: "<li> {{todo.desc}} </li>"
 });
 
 let app7 = new Vue ({
