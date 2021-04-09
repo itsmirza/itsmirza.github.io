@@ -18,7 +18,7 @@ function GetBooking(){
 
         for(let i=0; i<json.bookingitems.length;i++){
             let gName =json.bookingitems[i].name;
-            let gEmail = json.bookingitems[i].emal;
+            let gEmail = json.bookingitems[i].email;
             let gPax = json.bookingitems[i].pax;
             let gRemarks =json.bookingitems[i].remarks;
             let gId = json.bookingitems[i].id;
