@@ -11,6 +11,11 @@ function GetBooking(){
 
         let bookingNameList = document.getElementById("bookingNameList");
 
+        //clear the table rows
+        for(let k = bookingNameList.row.length-1; k > 0; k-- ){
+            bookingNameList.deleteRow(k);
+        }
+
         for(let i=0; i<json.bookingitem.length;i++){
             let gName =json.bookingitem[i].name;
             let gEmail = json.bookingitem[i].emal;
