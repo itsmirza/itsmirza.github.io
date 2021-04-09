@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Booking App - Booking Page</title>
+    <title>Table Booking App - Listing Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
@@ -23,10 +23,10 @@
                         <li class="nav-item">
                           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active" >
+                        <li class="nav-item" >
                           <a class="nav-link" href="book.html">Book Table</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="list.html">View Booking</a>
                         </li>
                       </ul>
@@ -40,9 +40,9 @@
         <div class="row">
             <div class="col">
                 <div class="jumbotron">
-                    <h1 class="display-4">Yes.... you are here</h1>
+                    <h1 class="display-4">Here is our booking list!</h1>
                     <p class="lead">
-                        Tell us your plan and we will call you!
+                        Call them to confirm!
                     </p>
                 </div>
             </div>
@@ -51,30 +51,20 @@
         <!--Booking Form-->
         <div class="row">
             <div class="col">
-                <div class="form-group">
-                    <label for="userName">Name</label>
-                    <input type="text" class="form-control" id="userName">
-                </div>
-                <div class="form-group">
-                    <label for="userEmail">Email</label>
-                    <input type="text" class="form-control" id="userEmail">
-                </div>
-                <div class="form-group">
-                    <label for="userPax">Pax</label>
-                    <select class="form-control" id="userPax">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="userRemarks">Remarks</label>
-                    <textarea class="form-control" id="userRemarks" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-primary" id="bookNow">Primary</button>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Pax</th>
+                        <th scope="col">Remarks</th>
+                        <th scope="col">Task</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
             </div>
         </div>
 
