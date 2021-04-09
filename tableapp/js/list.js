@@ -24,12 +24,12 @@ function GetBooking(){
             let gId = json.bookingitems[i].id;
 
             let row = bookingNameList.insertRow(bookingNameList.rows.length);
-            row.insertCall(0).innerHTML =gId;
-            row.insertCall(1).innerHTML =gName;
-            row.insertCall(2).innerHTML =gEmail;
-            row.insertCall(3).innerHTML =gPax;
-            row.insertCall(4).innerHTML =gRemarks;
-            row.insertCall(5).innerHTML ="TBC";
+            row.insertCell(0).innerHTML =gId;
+            row.insertCell(1).innerHTML =gName;
+            row.insertCell(2).innerHTML =gEmail;
+            row.insertCell(3).innerHTML =gPax;
+            row.insertCell(4).innerHTML =gRemarks;
+            row.insertCell(5).innerHTML ="TBC";
         }
     });
 }
