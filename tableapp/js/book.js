@@ -1,10 +1,10 @@
 let bookNowBtn = document.getElementById("bookNow");
 bookNowBtn.addEventListener("click", function(){
     let userName = document.getElementById("userName");
-    let userNameVal = userName.nodeValue;
+    let userNameVal = userName.Value;
 
     let userEmail = document.getElementById("userEmail");
-    let userEmailVal = userEmail.nodeValue;
+    let userEmailVal = userEmail.Value;
 
     let userPaxVal = document.getElementById("userPax").value;
     let userRemarksVal = document.getElementById("userRemarks").value;
