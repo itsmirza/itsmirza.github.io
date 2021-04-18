@@ -10,16 +10,14 @@ commentBtn.addEventListener("click", function(){
 
 function UserComment(userNameVal, userEmailVal, userSubVal, userDetailVal){
     let url = 'https://api.sheety.co/5cf7d326628fb1e6b1944ef9f71fa9eb/yuyuchoc/userComment';
-    
     let body = {
         userComment: {
-            name : userNameVal,
-            email : userEmailVal,
-            subject : userSubject,
-            details : userDetails
+            name:userNameVal,
+            email:userEmailVal,
+            subject:userSubVal,
+            details:userDetailVal
         }
     }
-    
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(body),
