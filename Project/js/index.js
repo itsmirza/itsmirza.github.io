@@ -27,7 +27,7 @@ function UserComment(userNameVal, userEmailVal, userSubVal, userDetailVal){
     })
     .then((response) => response.json())
     .then(json => {
-        alert("Thank you "+ json.usercomment.name +" , for contact us.")
+        alert("Thank you "+ json.userComment.name +" , for contact us.")
     });
 
 }
