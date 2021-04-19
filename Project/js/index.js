@@ -11,7 +11,7 @@ commentBtn.addEventListener("click", function(){
 function UserComment(userNameVal, userEmailVal, userSubVal, userDetailVal){
     let url = 'https://api.sheety.co/5cf7d326628fb1e6b1944ef9f71fa9eb/yuyuchoc/userComment';
     let body = {
-        userComment: {
+        usercomment: {
             name:userNameVal,
             email:userEmailVal,
             subject:userSubVal,
