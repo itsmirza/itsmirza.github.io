@@ -21,7 +21,7 @@ function GetBooking(){
             let bName =json.bookingDetailsList[i].name;            
             let bEmail = json.bookingDetailsList[i].email;
             let bPhone =json.bookingDetailsList[i].phone;
-            let gPax = json.bookingDetailsList[i].package;
+            let bPackage = json.bookingDetailsList[i].package;
             let bRemarks =json.bookingDetailsList[i].remarks;
             let bId = json.bookingDetailsList[i].id;
             let btnId = "delete" + bId;
@@ -31,7 +31,7 @@ function GetBooking(){
             row.insertCell(1).innerHTML =bName;
             row.insertCell(2).innerHTML =bEmail;
             row.insertCell(3).innerHTML =bPhone;
-            row.insertCell(4).innerHTML =bPax;
+            row.insertCell(4).innerHTML =bPackage;
             row.insertCell(5).innerHTML =bRemarks;
             row.insertCell(6).innerHTML ="<button id='" + btnId + "' class='btn btn-danger'>Delete</button>";
 
