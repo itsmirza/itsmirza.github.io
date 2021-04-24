@@ -12,10 +12,6 @@ function GetBooking(){
         let bookingDetailsList = document.getElementById("bookingDetailsList");
         let bookingIds = [];
 
-        //clear the table rows 
-        for(let k = bookingDetailsList.rows.length-1; k > 0; k-- ){
-            bookingDetailsList.deleteRow(k);
-        }
 
         for(let i=0; i<json.bookingDetailsList.length;i++){
             let bName =json.bookingDetailsList[i].name;            
@@ -37,25 +33,6 @@ function GetBooking(){
 
             bookingIds.push(btnId);
         }
-
-        for (let j = 0; j<bookingIds.length; j++){
-            let el = document.getElementById(bookingIds[j]);
-            el.addEventListener("click", function(){
-                let theId = bookingIds[j].replace("delete", "");
-                DeleteBooking(theId);
-            });
-        }
     });
 
-}
-
-function DeleteBooking(id){
-    let url = 'https://api.sheety.co/5cf7d326628fb1e6b1944ef9f71fa9eb/yuyuchoc/bookingitems' + id;
-    fetch(url, {
-        method: 'DELETE',
-    })
-        .then(()=>{
-            alert("Record id" + id + "delete!");
-            GetBooking();
-        });
 }
