@@ -1,9 +1,36 @@
 let refreshNowBtn = document.getElementById("refreshNow");
 refreshNowBtn.addEventListener("click", function(){
-    GetBooking();
+    //GetBooking();
 });
 
+
+    /*
+
 function GetBooking(){
+
+    let url = 'https://api.sheety.co/5cf7d326628fb1e6b1944ef9f71fa9eb/yuyuchoc/bookingitems';
+    fetch(url)
+    .then((response) => response.json())
+    .then(json => {
+
+        for(let i=0; i < json.)
+        // Do something with the data
+        console.log(json.bookingitems);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     let url = 'https://api.sheety.co/5cf7d326628fb1e6b1944ef9f71fa9eb/yuyuchoc/bookingitems';
     fetch(url)
     .then((response) => response.json())
@@ -35,4 +62,4 @@ function GetBooking(){
         }
     });
 
-}
+}*/
