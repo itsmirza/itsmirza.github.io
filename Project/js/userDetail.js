@@ -12,11 +12,11 @@ function GetUserDetails(){
 
         let userDetails = document.getElementById("userDetails");
 
-        for(let i = 0 ; i <json.userComments.length; i++){
-            let uName = json.userComments[i].name;
-            let uSubject = json.userComments[i].subject;
-            let uDetails = json.userComments[i].details;
-            let uId = json.userComments[i].id;
+        for(let i = 0 ; i <json.userComment.length; i++){
+            let uName = json.userComment[i].name;
+            let uSubject = json.userComment[i].subject;
+            let uDetails = json.userComment[i].details;
+            let uId = json.userComment[i].id;
 
             let row = userDetails.insertRow(userDetails.rows.length);
             row.insertCell(0).innerHTML = uId;
