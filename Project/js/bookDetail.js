@@ -3,9 +3,6 @@ refreshNowBtn.addEventListener("click", function(){
     GetBooking();
 });
 
-
-   
-
 function GetBooking(){
 
     let url = 'https://api.sheety.co/5cf7d326628fb1e6b1944ef9f71fa9eb/yuyuchoc/bookingitems';
@@ -44,7 +41,7 @@ function GetBooking(){
 
         for (let j =0; j<bookingIds.length; j++){
             let el = document.getElementById(bookingIds[j]);
-            el.getEventListener("click", function(){
+            el.addEventListener("click", function(){
                 let theId = bookingIds[j].replace("delete", "");
                 DeleteBooking(theId);
             });
