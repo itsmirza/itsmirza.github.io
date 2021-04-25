@@ -13,7 +13,7 @@ function GetUserDetails(){
 
         let userDetails = document.getElementById("userDetails"),
 
-        for(i = 0 ; i <json.userComments.length; i++){
+        for(let i = 0 ; i <json.userComments.length; i++){
             let uName = json.userComments[i].name;
             let uSubject = json.userComments[i].subject;
             let uDetails = json.userComments[i].details;
