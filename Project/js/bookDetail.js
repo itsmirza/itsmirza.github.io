@@ -24,7 +24,7 @@ function GetBooking(){
             let bId = json.bookingitems[i].id;
             //let btnId = "delete" + bId;
 
-            let row = bookingDetails.insertRow(bookingDetails.row.length);
+            let row = bookingDetails.insertRow(bookingDetails.rows.length);
             row.insertCell(0).innerHTML = bId;
             row.insertCell(1).innerHTML = bName;
             row.insertCell(2).innerHTML = bEmail;
