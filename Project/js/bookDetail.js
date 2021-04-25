@@ -15,6 +15,10 @@ function GetBooking(){
 
         let bookingDetails = document.getElementById("bookingDetails");
 
+        for(let k= bookingDetails.rows.length -1; k > 0; k--){
+            bookingDetails.deleteRow(k);
+        }
+
         for(let i=0; i < json.bookingitems.length; i++){
             let bName =json.bookingitems[i].name;            
             let bEmail = json.bookingitems[i].email;
