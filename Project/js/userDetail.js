@@ -11,7 +11,7 @@ function GetUserDetails(){
     .then((response) => response.json())
     .then(json => {
 
-        let userDetails = document.getElementById("userDetails"),
+        let userDetails = document.getElementById("userDetails");
 
         for(let i = 0 ; i <json.userComments.length; i++){
             let uName = json.userComments[i].name;
